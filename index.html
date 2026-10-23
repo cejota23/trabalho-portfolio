@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de César Assunção da Silva Jr - Estudante de Ensino Médio Técnico em TI no Instituto Educacional Raphael Di Santo. Projetos, habilidades e contato.">
+  <meta name="author" content="César Assunção da Silva Jr">
+  <meta name="keywords" content="César Assunção, Portfólio TI, Técnico em Informática, Desenvolvedor Júnior, Tecnologia, Programação">
+  <meta name="theme-color" content="#0a0f1d">
+
+  <!-- Open Graph / Meta compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="César Assunção da Silva Jr | Portfólio de TI">
+  <meta property="og:description" content="Estudante de Ensino Médio Técnico em TI. Apaixonado por tecnologia, desenvolvimento e inovação.">
+  
+  <title>César Assunção da Silva Jr | Portfólio Profissional</title>
+
+  <!-- Favicon moderno SVG (Azul & Roxo) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090d16'/%3E%3Cpath d='M10 11L5 16L10 21' stroke='%233b82f6' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M22 11L27 16L22 21' stroke='%238b5cf6' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cline x1='18' y1='9' x2='14' y2='23' stroke='%23ffffff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Efeito de iluminação de fundo suave -->
+  <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+  <div class="ambient-glow glow-purple" aria-hidden="true"></div>
+
+  <!-- Cabeçalho & Navegação -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Voltar ao início">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">César</span>
+        <span class="logo-accent">.TI</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-desktop" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link nav-link-cta">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão Menu Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileNav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Gaveta Menu Mobile -->
+    <nav class="nav-mobile" id="mobileNav" aria-label="Menu móvel" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+        <li><a href="#sobre" class="mobile-nav-link">Sobre mim</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+        <li><a href="#contato" class="mobile-nav-link mobile-nav-cta">Entrar em Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- SEÇÃO INÍCIO (HERO) -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge reveal-item">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span>Disponível para oportunidades e estágio em TI</span>
+          </div>
+
+          <h1 class="hero-title reveal-item">
+            Olá, eu sou <br>
+            <span class="text-gradient">César Assunção da Silva Jr</span>
+          </h1>
+
+          <p class="hero-subtitle reveal-item">
+            Estudante de Ensino Médio Técnico em TI focado em aprender constantemente, resolver problemas com lógica e construir projetos com tecnologia moderna.
+          </p>
+
+          <div class="hero-actions reveal-item">
+            <a href="#projetos" class="btn btn-primary">
+              <span>Conheça meus projetos</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contato" class="btn btn-secondary">
+              <span>Entrar em contato</span>
+            </a>
+            <a href="assets/curriculo-cesar-assuncao.pdf" class="btn btn-outline-hero" id="btnDownloadCv" title="Baixar currículo em PDF">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Currículo (PDF)</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-info reveal-item">
+            <div class="quick-info-item">
+              <span class="quick-info-label">Formação</span>
+              <span class="quick-info-val">Técnico em TI</span>
+            </div>
+            <div class="quick-info-divider" aria-hidden="true"></div>
+            <div class="quick-info-item">
+              <span class="quick-info-label">Instituição</span>
+              <span class="quick-info-val">Inst. Raphael Di Santo</span>
+            </div>
+            <div class="quick-info-divider" aria-hidden="true"></div>
+            <div class="quick-info-item">
+              <span class="quick-info-label">Foco Atual</span>
+              <span class="quick-info-val">Base Sólida & Prática</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO DESTAQUE MINIMALISTA COM ACABAMENTO ELEGANTE -->
+        <div class="hero-media reveal-item">
+          <div class="photo-frame-wrapper" id="photoWrapper">
+            <!-- Moldura elegante com brilho e borda degradê -->
+            <div class="photo-glow" aria-hidden="true"></div>
+            
+            <div class="photo-card">
+              <!-- Espaço para foto do usuário. Se tiver um arquivo foto.jpg, basta substituir a tag abaixo -->
+              <div class="photo-content-area" id="profilePhotoArea">
+                <div class="avatar-tech-display" id="avatarDisplay">
+                  <!-- Monograma estilizado de alta definição como placeholder profissional -->
+                  <div class="avatar-monogram">
+                    <span>CA</span>
+                  </div>
+                  <div class="avatar-tech-lines" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="photo-name">César Assunção Jr</p>
+                  <span class="photo-role">Técnico em Formação • TI</span>
+                </div>
+
+                <!-- Dica e teste de personalização -->
+                <div class="photo-placeholder-actions">
+                  <input type="file" id="localPhotoInput" accept="image/*" style="display: none;" aria-label="Carregar foto de teste">
+                  <button type="button" class="photo-placeholder-badge" id="btnUploadPreview" title="Clique para testar uma foto sua do computador e ver o resultado imediato!">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    <span>Testar sua foto</span>
+                  </button>
+                  <button type="button" class="photo-reset-btn" id="btnResetPhoto" style="display: none;" title="Restaurar avatar tech original">
+                    ✕ Restaurar
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cartão de detalhes flutuante -->
+              <div class="photo-floating-card">
+                <div class="floating-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <div class="floating-text">
+                  <strong>Entusiasta de Tecnologia</strong>
+                  <span>Aprendizado em constante evolução</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section id="sobre" class="section section-sobre">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-badge">Minha Trajetória</span>
+          <h2 class="section-title">Sobre mim</h2>
+          <p class="section-subtitle">Conheça um pouco mais sobre minha formação, meus interesses e minha rotina.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Coluna Principal de Texto -->
+          <div class="about-card about-card-main reveal-item">
+            <div class="card-icon-header">
+              <div class="icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <h3 class="about-card-title">Formação e Dedicação em TI</h3>
+            </div>
+            
+            <div class="about-text-content">
+              <p>
+                Atualmente curso o <strong>Ensino Médio Técnico em Tecnologia da Informação</strong> no <strong>Instituto Educacional Raphael Di Santo</strong>. Nessa jornada, tenho desenvolvido uma base sólida em conceitos fundamentais da computação, lógica de programação e arquitetura de sistemas.
+              </p>
+              <p>
+                Meu interesse por tecnologia nasceu da curiosidade em entender como ferramentas digitais funcionam por trás das telas. Sou motivado pelo aprendizado contínuo, pela prática através de projetos reais e pelo desafio de encontrar soluções bem estruturadas para problemas do cotidiano.
+              </p>
+              <p>
+                Estou me preparando ativamente para ingressar no mercado de trabalho, buscando oportunidades onde eu possa contribuir com proatividade, aprender com profissionais experientes e evoluir constantemente na carreira técnica.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coluna Lateral: Pilares & Hobbies -->
+          <div class="about-side-cards">
+            <!-- Card Hobbies -->
+            <div class="about-card reveal-item">
+              <div class="card-icon-header">
+                <div class="icon-box icon-box-purple">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <h3 class="about-card-title">Interesses & Hobbies</h3>
+              </div>
+              <p class="hobby-desc">
+                Além dos estudos em computação, acredito que o equilíbrio pessoal estimula o raciocínio rápido e o trabalho em equipe:
+              </p>
+              <div class="hobby-tags">
+                <div class="hobby-item">
+                  <div class="hobby-icon">🎮</div>
+                  <div class="hobby-info">
+                    <strong>Videogame</strong>
+                    <span>Estratégia, foco e resolução rápida de desafios</span>
+                  </div>
+                </div>
+                <div class="hobby-item">
+                  <div class="hobby-icon">⚽</div>
+                  <div class="hobby-info">
+                    <strong>Futebol</strong>
+                    <span>Espírito de equipe, comunicação e determinação</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Valores de Trabalho -->
+            <div class="about-card reveal-item">
+              <div class="card-icon-header">
+                <div class="icon-box icon-box-blue">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                </div>
+                <h3 class="about-card-title">Postura Profissional</h3>
+              </div>
+              <ul class="values-list">
+                <li>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Compromisso com prazos e disciplina de estudo</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Vontade genuína de aprender e receber feedbacks</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Facilidade de comunicação e trabalho cooperativo</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SKILLS (HABILIDADES) -->
+    <section id="skills" class="section section-skills">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-badge">Competências</span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <p class="section-subtitle">
+            Tecnologias e conceitos trabalhados na formação técnica e em estudos práticos.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Categoria: Desenvolvimento Web -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrap category-blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Desenvolvimento Web</h3>
+                <span class="category-subtitle">Interfaces e estruturação</span>
+              </div>
+            </div>
+
+            <div class="skill-tags-list">
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-status-tag">Estruturação Semântica</span>
+                </div>
+                <p class="skill-desc">Construção de páginas organizadas, acessíveis e compatíveis com SEO.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-status-tag">Estilização & Flexbox</span>
+                </div>
+                <p class="skill-desc">Design responsivo, layouts com Flexbox/Grid e animações fluidas.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-status-tag">Lógica & DOM</span>
+                </div>
+                <p class="skill-desc">Manipulação de elementos, eventos e interatividade dinâmica no navegador.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categoria: Lógica e Fundamentos -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrap category-purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Lógica & Fundamentos</h3>
+                <span class="category-subtitle">Base estrutural em TI</span>
+              </div>
+            </div>
+
+            <div class="skill-tags-list">
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">Lógica de Programação</span>
+                  <span class="skill-status-tag">Algoritmos</span>
+                </div>
+                <p class="skill-desc">Estruturas condicionais, laços de repetição, vetores e raciocínio analítico.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">Bancos de Dados</span>
+                  <span class="skill-status-tag">Modelagem & SQL Básico</span>
+                </div>
+                <p class="skill-desc">Conceitos relacionais, consultas básicas (SELECT, INSERT, UPDATE) e tabelas.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">Hardware & Redes Básicas</span>
+                  <span class="skill-status-tag">Conceitos Técnicos</span>
+                </div>
+                <p class="skill-desc">Noções de funcionamento de computadores, protocolos de internet e topologia.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categoria: Ferramentas e Boas Práticas -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrap category-indigo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Ferramentas & Fluxo</h3>
+                <span class="category-subtitle">Produtividade de desenvolvimento</span>
+              </div>
+            </div>
+
+            <div class="skill-tags-list">
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-status-tag">Controle de Versão</span>
+                </div>
+                <p class="skill-desc">Comandos essenciais (clone, commit, push, branch) e publicação de repositórios.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-main">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-status-tag">Ambiente de Código</span>
+                </div>
+                <p class="skill-desc">Utilização diária com extensões, atalhos e depuração básica.</p>
+              </div>
+
+              <!-- Placeholder personalizável para César adicionar novas tecnologias conforme aprender -->
+              <div class="skill-item skill-item-customizable" title="Espaço para adicionar novas competências à medida que progredir">
+                <div class="skill-main">
+                  <span class="skill-name editable-label">+ Adicionar Nova Competência</span>
+                  <span class="skill-status-tag tag-placeholder">Espaço Editável</span>
+                </div>
+                <p class="skill-desc">
+                  Área pronta para incluir novas tecnologias que estiver estudando (ex.: Python, React, Linux ou Java).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos" class="section section-projetos">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-badge">Portfólio em Construção</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">
+            Aplicações e estudos práticos desenvolvidos durante o curso técnico e aprendizado individual.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJETO 1: Portfólio Pessoal (Projeto Real Atual) -->
+          <article class="project-card reveal-item">
+            <div class="project-visual">
+              <div class="project-preview-mockup preview-portfolio">
+                <div class="mockup-header">
+                  <span class="mockup-dot dot-red"></span>
+                  <span class="mockup-dot dot-yellow"></span>
+                  <span class="mockup-dot dot-green"></span>
+                  <span class="mockup-url">cesar-portfolio.dev</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-hero-line"></div>
+                  <div class="mockup-text-block"></div>
+                  <div class="mockup-cards-row">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tag-floating">Projeto Atual</div>
+            </div>
+
+            <div class="project-info">
+              <h3 class="project-name">Portfólio Pessoal Responsivo</h3>
+              <p class="project-description">
+                Site moderno e minimalista desenvolvido com HTML5 semântico, CSS3 personalizado e JavaScript para apresentar minha trajetória em TI, projetos e canais de contato com recrutadores.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3 Moderno</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Design Responsivo</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#inicio" class="btn-card btn-card-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Ver Demonstração</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-outline" title="Link configurável para o repositório">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Código no GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: Sistema / Aplicação Web de Prática (Placeholder Pronto para Edição) -->
+          <article class="project-card reveal-item">
+            <div class="project-visual">
+              <div class="project-preview-mockup preview-task">
+                <div class="mockup-header">
+                  <span class="mockup-dot dot-red"></span>
+                  <span class="mockup-dot dot-yellow"></span>
+                  <span class="mockup-dot dot-green"></span>
+                  <span class="mockup-url">gerenciador-tarefas.local</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-list-item done"></div>
+                  <div class="mockup-list-item"></div>
+                  <div class="mockup-list-item"></div>
+                </div>
+              </div>
+              <div class="project-tag-floating tag-pratica">Projeto Prático</div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-header-row">
+                <h3 class="project-name">Gerenciador de Tarefas Interativo</h3>
+                <span class="badge-customizable">Editável</span>
+              </div>
+              <p class="project-description">
+                Aplicação focada em manipulação de DOM e persistência local (LocalStorage). Permite cadastrar, filtrar e organizar atividades diárias, praticando lógica em JavaScript.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">DOM API</span>
+                <span class="tech-badge">CSS Flexbox</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn-card btn-card-primary btn-placeholder" onclick="event.preventDefault(); alert('Espaço preparado para inserir o link do seu projeto!');">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Ver Projeto</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-outline" title="Link configurável para o repositório">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repositório</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 3: Card Estruturado para Próximo Projeto / Trabalho Escolar -->
+          <article class="project-card project-card-new reveal-item">
+            <div class="project-visual new-project-visual">
+              <div class="new-project-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </div>
+              <span class="new-project-subtitle">Estrutura Pronta</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-header-row">
+                <h3 class="project-name">[Nome do Seu Novo Projeto]</h3>
+                <span class="badge-customizable badge-novo">Pronto para Preencher</span>
+              </div>
+              <p class="project-description">
+                Card preparado com toda a estrutura visual para você documentar seus trabalhos acadêmicos do Raphael Di Santo ou novos projetos pessoais conforme forem criados.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge tech-badge-edit">[Tecnologia 1]</span>
+                <span class="tech-badge tech-badge-edit">[Tecnologia 2]</span>
+                <span class="tech-badge tech-badge-edit">[Banco/Ferramenta]</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn-card btn-card-primary btn-placeholder" onclick="event.preventDefault(); alert('Para configurar este botão: edite o arquivo index.html e adicione o link do seu novo projeto!');">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Link do Projeto</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-outline" title="Link configurável para o repositório">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="section section-contato">
+      <div class="container">
+        <div class="contact-box reveal-item">
+          <div class="contact-header">
+            <span class="section-badge">Vamos Conversar?</span>
+            <h2 class="contact-title">Entre em contato</h2>
+            <p class="contact-subtitle">
+              Estou à disposição para processos seletivos, oportunidades de estágio e conversas profissionais sobre tecnologia. Será um prazer falar com você!
+            </p>
+          </div>
+
+          <div class="contact-methods-grid">
+            <!-- E-mail com botão rápido de copiar -->
+            <div class="contact-card">
+              <div class="contact-card-icon contact-icon-blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">E-mail Profissional</span>
+                <span class="contact-value" id="emailText">cesar.assuncao@exemplo.com</span>
+                <span class="contact-note">(Substitua pelo seu e-mail real)</span>
+              </div>
+              <div class="contact-actions">
+                <a href="mailto:cesar.assuncao@exemplo.com" class="btn-contact-action" id="emailMailtoLink" title="Enviar e-mail">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <span>Escrever</span>
+                </a>
+                <button type="button" class="btn-contact-action btn-copy" id="btnCopyEmail" title="Copiar endereço de e-mail">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span id="copyFeedbackText">Copiar</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card">
+              <div class="contact-card-icon contact-icon-indigo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/cesar-assuncao</span>
+                <span class="contact-note">(Insira o link do seu perfil)</span>
+              </div>
+              <div class="contact-actions">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-contact-action" title="Abrir perfil no LinkedIn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Conectar</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card">
+              <div class="contact-card-icon contact-icon-purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/cesar-assuncao</span>
+                <span class="contact-note">(Repositórios e códigos)</span>
+              </div>
+              <div class="contact-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-contact-action" title="Acessar GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Acessar</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- WhatsApp / Mensagem Rápida -->
+            <div class="contact-card">
+              <div class="contact-card-icon contact-icon-emerald">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">(19) 9XXXX-XXXX</span>
+                <span class="contact-note">(Mensagem direta / Celular)</span>
+              </div>
+              <div class="contact-actions">
+                <a href="https://wa.me/5519999999999" target="_blank" rel="noopener noreferrer" class="btn-contact-action" id="whatsappLink" title="Abrir conversa no WhatsApp">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Mensagem</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">
+          &copy; <span id="currentYear"></span> <strong>César Assunção da Silva Jr</strong>. Todos os direitos reservados.
+        </p>
+        <p class="footer-subtext">Construído com HTML, CSS e JavaScript • Focado em performance e acessibilidade</p>
+      </div>
+      <div class="footer-right">
+        <a href="#inicio" class="back-to-top" aria-label="Voltar ao topo da página">
+          <span>Voltar ao topo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
